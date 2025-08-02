@@ -133,13 +133,14 @@ See CONTRIBUTING.md for details.
 
 ---
 
-🧠 Philosophy
+🧭 Project Philosophy
 
-Structure matters.
+Power is not just about hierarchy — it's about structure. This project is grounded in the idea that organizational transparency can and should be modeled mathematically.
 
-The way we connect people, roles, and responsibilities defines the risk of miscommunication, opacity, and abuse.
+- 📜 [Manifesto of Structural Transparency](./MANIFESTO.md): a declaration of principles for ethical, transparent organizational design.
+- 🧩 [Structural Patterns](./patterns.md): a growing catalog of known graph patterns that reflect common governance issues, such as opacity, overload, conflicted subordination, and more.
 
-By making power visible, we make it accountable.
+By identifying these patterns early, organizations can improve accountability, communication, and integrity — reducing the risk of corruption and misuse of power.
 
 ---
 
