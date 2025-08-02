@@ -32,7 +32,45 @@ You provide a graph of your organization (in DOT format), and the engine analyze
 - 🕸️ **One-way Subgraphs** – no way for data to flow back up
 - 📉 **Information Cascade Weakness** – upper management isolated from reality
 
-The result is a **Power Transparency Index** along with a visual graph report.
+The result example
+
+```json
+{
+  "transparency_index": 76.4,
+  "information": {
+    "total_nodes": 17,
+    "total_edges": 28,
+    "hierarchy_levels": 4,
+    "top_influencers": [
+      { "id": "ID001", "name": "Deputy Director", "incoming_edges": 8 },
+      { "id": "ID002", "name": "HR Head", "incoming_edges": 6 }
+    ],
+    "isolated_nodes": [
+      { "id": "ID017", "name": "Consultant" }
+    ],
+    "potential_risk_nodes": [
+      { "id": "ID005", "name": "Middle Manager", "reason": "Single upward path, no cross-validation" }
+    ]
+  },
+  "issues": [
+    {
+      "type": "Opacity Pattern",
+      "description": "Node ID005 has exclusive access to superiors and subordinates",
+      "nodes_involved": ["ID004", "ID005", "ID006"]
+    },
+    {
+      "type": "Responsibility Imbalance",
+      "description": "Node ID001 has 8 subordinates, Node ID007 has none",
+      "nodes_involved": ["ID001", "ID007"]
+    },
+    {
+      "type": "Disconnected Role",
+      "description": "Node ID017 is not connected to the graph",
+      "nodes_involved": ["ID017"]
+    }
+  ]
+}
+```
 
 ---
 
