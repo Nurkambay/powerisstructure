@@ -32,7 +32,26 @@ You provide a graph of your organization (in DOT format), and the engine analyze
 - 🕸️ **One-way Subgraphs** – no way for data to flow back up
 - 📉 **Information Cascade Weakness** – upper management isolated from reality
 
-The result example
+---
+
+## 🛠 Example
+
+### Request example
+
+```dot
+digraph structure {
+    A [label="CEO"]
+    B [label="Deputy"]
+    C [label="Staff"]
+
+    C -> B
+    B -> A
+}
+```
+
+⚠️ This is an opacity triangle — CEO receives filtered data from Deputy only.
+
+### Response example
 
 ```json
 {
@@ -72,22 +91,6 @@ The result example
 }
 ```
 
----
-
-## 🛠 Example
-
-```dot
-digraph structure {
-    A [label="CEO"]
-    B [label="Deputy"]
-    C [label="Staff"]
-
-    C -> B
-    B -> A
-}
-```
-
-⚠️ This is an opacity triangle — CEO receives filtered data from Deputy only.
 
 ---
 
