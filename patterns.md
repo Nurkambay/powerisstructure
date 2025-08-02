@@ -23,14 +23,15 @@ X2 → Manager
 X8 → Manager
 ```
 
-## 3. Responsibility Gap
+## 3. Conflicted Subordination
 
-**Description**: A manager has multiple subordinates with no clear delegation of responsibilities, leading to confusion and overlapping duties.
+**Description**: One employee reports to multiple managers who are not aligned in a clear hierarchy. This leads to task conflicts, overlapping expectations, and a lack of unified responsibility for decision-making.
 
 **Pattern**:
 ```
 A → B
 A → C
+A → D
 ```
 
 ## 4. Isolated Node
