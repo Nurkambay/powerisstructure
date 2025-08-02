@@ -1,42 +1,64 @@
 # 🧠 Power Is Structure
 
-> A mathematical framework to analyze organizational power structures and assess their potential for corruption and opacity.
+> A graph-based engine to assess organizational power structures for hidden risks, miscommunication, and potential corruption.  
+> Upload a DOT graph, get a transparency index and structural diagnostics.
 
+---
 
-## 🔍 What Is It?
+## 📘 Summary
 
-**Power Is Structure** is an open-source engine that allows you to represent organizations as **graphs of authority and communication**, then evaluate them using **corruption-prone patterns**, **information flow asymmetry**, and **control bottlenecks**.
+**Power Is Structure** is an open-source engine that represents organizations as **graphs of authority and communication**.  
+It analyzes them to detect **corruption-prone patterns**, **information flow asymmetry**, and **control bottlenecks**.
 
-The project introduces a novel concept:  
-> **Corruption is not random — it emerges from structure.**  
-By modeling hierarchies as graphs and identifying specific anti-patterns, we can calculate a **Power Transparency Index** — an estimate of how robust or fragile a structure is in terms of abuse risk.
+The core idea is simple:  
+> **Corruption is not random — it emerges from structure.**
+
+By modeling hierarchies as graphs and identifying specific anti-patterns, we calculate a **Power Transparency Index**,  
+a quantitative estimate of how structurally robust (or fragile) an organization is.
 
 ---
 
 ## 🎯 Use Cases
 
-- 🏛️ Government bodies and ministries
-- 🏢 Corporations and large departments
-- 🧩 NGOs and multi-level organizations
-- 🧠 Research in governance and transparency
-- 🧪 Experimental simulations of authority systems
+- 🏛️ Government ministries and civil institutions
+- 🏢 Corporations and enterprise departments
+- 🧩 NGOs and distributed organizations
+- 🧠 Research in governance, transparency, and ethics
+- 🧪 Experimental simulations and academic analysis
+
+**Example Outcomes:**
+- 🔍 Discover hidden authority loops before audits
+- 📉 Quantify structural risks to guide reorganization
+- 🛡 Support transparency efforts with measurable metrics
 
 ---
 
 ## ⚙️ How It Works
 
-You provide a graph of your organization (in DOT format), and the engine analyzes it to detect:
+### 1. Input  
+Submit a graph in [DOT format](https://graphviz.org/doc/info/lang.html) describing authority and reporting links.
 
-- ⚠️ **Opacity Triangles** – chains of command with no alternative feedback paths
-- 🚨 **Control Monopolies** – nodes that receive all input but aren't supervised
-- 🕸️ **One-way Subgraphs** – no way for data to flow back up
-- 📉 **Information Cascade Weakness** – upper management isolated from reality
+### 2. Analysis  
+The engine parses your graph and detects structural issues:
+
+- ⚠️ **Opacity Triangles** – filtered one-way chains of control
+- 🚨 **Control Monopolies** – unsupervised central managers
+- 🕸️ **One-way Subgraphs** – no feedback paths upward
+- 📉 **Cascade Weakness** – disconnected top management
+- 🔀 **Responsibility Conflict** – multiple managers with no clear hierarchy
+
+### 3. Output  
+You receive a structured JSON report:
+
+- ✅ **Transparency Index** (0–100)
+- 🧠 **Information Summary** – key metrics, influencer roles, isolated nodes
+- 🛑 **Detected Issues** – matched patterns and risk assessments
 
 ---
 
 ## 🛠 Example
 
-### Request example
+### Request (DOT)
 
 ```dot
 digraph structure {
@@ -49,9 +71,7 @@ digraph structure {
 }
 ```
 
-⚠️ This is an opacity triangle — CEO receives filtered data from Deputy only.
-
-### Response example
+### Response (JSON)
 
 ```json
 {
@@ -91,59 +111,62 @@ digraph structure {
 }
 ```
 
+---
+
+## 🧠 Why It Matters
+
+Organizational abuse doesn't stem from individuals — it stems from unchecked structures.  
+By making those structures **visible and measurable**, we bring **accountability to design** itself.
+
+Think of it as **linting for hierarchies.**
 
 ---
 
-🔓 License
+## 🔗 Resources
 
-This project is released under the Mozilla Public License 2.0 (MPL-2.0).
-You’re free to use, extend, and integrate the code.
+- 📜 [Manifesto of Structural Transparency](./MANIFESTO.md)
+- 🧩 [Structural Pattern Catalog](./patterns.md)
+- 📄 [API Documentation (soon)](./docs/api.md)
+- 🧪 [Try Online (coming soon)](https://powerisstructure.com)
+
+---
+
+## 🔓 License
+
+This project is released under the **Mozilla Public License 2.0 (MPL-2.0)**.  
+You’re free to use, extend, and integrate the code.  
 Changes to the core logic must be published under the same license.
 
 ---
 
-👤 Author
+## 👤 Author
 
-Created by Leonid Baranov,
-software architect and organizational analysis enthusiast.
+Created by **Leonid Baranov**,  
+software architect and organizational structure researcher.
 
-Inspired by real-world structures and challenges encountered while studying governance models in post-Soviet and Western systems.
-
----
-
-🚀 Roadmap
-- Core index calculation
-- Visualization patterns
-- Graph playground (web)
-- Public scoring API
-- Integration with HR and audit systems
-- Community plugin framework
+Inspired by real-world patterns encountered in both post-Soviet and Western governance models.
 
 ---
 
-🧑‍💻 Contributing
+## 🚀 Roadmap
 
-Contributions are welcome! Feel free to:
-- Submit new graph patterns
-- Improve the API
-- Share examples from real-world orgs (anonymized)
-- Build visual tools
-
-See CONTRIBUTING.md for details.
-
----
-
-🧭 Project Philosophy
-
-Power is not just about hierarchy — it's about structure. This project is grounded in the idea that organizational transparency can and should be modeled mathematically.
-
-- 📜 [Manifesto of Structural Transparency](./MANIFESTO.md): a declaration of principles for ethical, transparent organizational design.
-- 🧩 [Structural Patterns](./patterns.md): a growing catalog of known graph patterns that reflect common governance issues, such as opacity, overload, conflicted subordination, and more.
-
-By identifying these patterns early, organizations can improve accountability, communication, and integrity — reducing the risk of corruption and misuse of power.
+- [x] Core index calculation engine
+- [x] Anti-pattern detection
+- [ ] Graph visualization patterns
+- [ ] Public REST API
+- [ ] Graph playground (web)
+- [ ] HR/audit system integrations
+- [ ] Plugin & pattern registry
 
 ---
 
-🌐 Website
+## 🧑‍💻 Contributing
 
-🔗 https://powerisstructure.com
+Contributions are welcome!
+
+- 📦 Submit new graph patterns
+- 🧠 Improve detection heuristics
+- 📊 Build visual tools
+- ✍️ Share anonymized real-world examples
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
