@@ -48,3 +48,56 @@ digraph structure {
     C -> B
     B -> A
 }
+
+⚠️ This is an opacity triangle — CEO receives filtered data from Deputy only.
+
+🔓 License
+
+This project is released under the Mozilla Public License 2.0 (MPL-2.0).
+You’re free to use, extend, and integrate the code.
+Changes to the core logic must be published under the same license.
+
+👤 Author
+
+Created by Leonid Baranov,
+software architect and organizational analysis enthusiast.
+
+Inspired by real-world structures and challenges encountered while studying governance models in post-Soviet and Western systems.
+
+---
+
+🚀 Roadmap
+	•	Core index calculation
+	•	Visualization patterns
+	•	Graph playground (web)
+	•	Public scoring API
+	•	Integration with HR and audit systems
+	•	Community plugin framework
+
+---
+
+🧑‍💻 Contributing
+
+Contributions are welcome! Feel free to:
+	•	Submit new graph patterns
+	•	Improve the API
+	•	Share examples from real-world orgs (anonymized)
+	•	Build visual tools
+
+See CONTRIBUTING.md for details.
+
+---
+
+🧠 Philosophy
+
+Structure matters.
+
+The way we connect people, roles, and responsibilities defines the risk of miscommunication, opacity, and abuse.
+
+By making power visible, we make it accountable.
+
+---
+
+🌐 Website
+
+🔗 https://powerisstructure.com
